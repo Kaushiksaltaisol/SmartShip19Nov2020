@@ -1,0 +1,149 @@
+﻿
+@{
+    ViewData["Title"] = "Customer";
+    Layout = "~/Views/Shared/_LayoutSmartship.cshtml";
+}
+
+<h2 class="content-title ">Customers</h2>
+<div class="customer-details">
+    <div class="position-relative">
+        <button type="button" class="btn btn-primary btn-addcustomer"><span class="icon"></span>Add customer</button>
+        <button type="button" class="btn btn-secondary btn-refresh"><span class="icon"></span>Add customer</button>
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">New Customers</a></li>
+                <li><a href="#tabs-2">Rejected Customers</a></li>
+            </ul>
+
+            <div id="tabs-1">
+                <div class="data-grd">
+                    <div class="row grd-top bm-15">
+                        <div class="col-md-6">
+                            <div class="search">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <input type="button" class="search-btn">
+                            </div>
+                        </div>
+                        <div class="col-md-6 filters">
+                            <div class="d-flex justify-content-end">
+                                <div class="sort">
+                                    <label>Sort:</label>
+                                    <select class="sort-select" required>
+                                        <option>Date Ascending</option>
+                                        <option>option1</option>
+                                        <option>option1</option>
+                                    </select>
+                                </div>
+                                <select class="filter-select" required>
+                                    @*<option disabled value selected>Filter</option>
+                                    <option>option1</option>
+                                    <option>option1</option>*@
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row grd bm-20">
+                        <div class="col-md-12">
+                            <table class="tabel data-table" cellpadding="0" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr class="head">
+                                        <th>Name</th>
+                                        <th>Phone</th>
+                                        <th>Email</th>
+                                        <th>ID Number</th>
+                                        <th class="action">ID Number</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="odd">
+                                        <td>Nameer Khan</td>
+                                        <td>+966 506640232</td>
+                                        <td>Nameer@getnoor.com</td>
+                                        <td>12232434FAADA</td>
+                                        <td>
+                                            <div class="action-bar">
+                                                <button class="btn btn-success "><span class="icon"></span></button>
+                                                <button class="btn btn-danger"><span class="icon"></span></button>
+                                                <button class="btn btn-light"><span class="icon"></span></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td>Nameer Khan</td>
+                                        <td>+966 506640232</td>
+                                        <td>Nameer@getnoor.com</td>
+                                        <td>12232434FAADA</td>
+                                        <td>
+                                            <div class="action-bar">
+                                                <button class="btn btn-success "><span class="icon"></span></button>
+                                                <button class="btn btn-danger"><span class="icon"></span></button>
+                                                <button class="btn btn-light"><span class="icon"></span></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td>Nameer Khan</td>
+                                        <td>+966 506640232</td>
+                                        <td>Nameer@getnoor.com</td>
+                                        <td>12232434FAADA</td>
+                                        <td>
+                                            <div class="action-bar">
+                                                <button class="btn btn-success "><span class="icon"></span></button>
+                                                <button class="btn btn-danger"><span class="icon"></span></button>
+                                                <button class="btn btn-light"><span class="icon"></span></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td>Nameer Khan</td>
+                                        <td>+966 506640232</td>
+                                        <td>Nameer@getnoor.com</td>
+                                        <td>12232434FAADA</td>
+                                        <td>
+                                            <div class="action-bar">
+                                                <button class="btn btn-success "><span class="icon"></span></button>
+                                                <button class="btn btn-danger"><span class="icon"></span></button>
+                                                <button class="btn btn-light"><span class="icon"></span></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row grd-top">
+                        <div class="col-md-6 grd-info">Showing 1-12 of 150</div>
+                        <div class="col-md-6 grd-pager d-flex justify-content-end">
+                            <div class="pager ">
+                                <ul class="pagination">
+                                    <li class="previous"><a href="#"></a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li class="next"><a href="#"></a></li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tabs-2">
+                Tab2
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+$(document).ready(function () {
+   $( "#tabs" ).tabs();
+});
+</script>
+
