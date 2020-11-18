@@ -167,20 +167,25 @@ tr td:last-child{border-top-right-radius:4px;border-bottom-right-radius:4px;}
     position: relative;
    text-transform: uppercase;letter-spacing: 2.1px;
 }
-.ui-dialog.customer-details-dialog .ui-dialog-title {
-display: none;
-}
-.ui-dialog.customer-details-dialog .ui-dialog-content{padding:20px;}
-.ui-dialog.customer-details-dialog .image-wrapper{padding:80px;}
+.ui-dialog .ui-dialog-title{font-family: 'Lato', sans-serif;letter-spacing: 2.1px;
+color: #505F6C;font-size:14px;padding: 20px 30px 0px 30px;text-transform: uppercase;}
+.ui-dialog.customer-details-dialog .ui-dialog-title {}
+.ui-dialog.customer-details-dialog .dialog-title{margin-top:30px;letter-spacing: 2.1px;
+color: #272727;font-weight:700;
+text-transform: uppercase}
+.ui-dialog.customer-details-dialog .dialog-title .customer-name{margin-bottom:4px;}
+.ui-dialog.customer-details-dialog  .ui-dialog-titlebar-close{top: 14px;}
+.ui-dialog.customer-details-dialog .ui-dialog-content{padding:30px;}
+.ui-dialog.customer-details-dialog .image-wrapper{padding:20px;text-align: center;}
 .ui-dialog.customer-details-dialog .customer-dialog-content .bottom-bar{display: flex;
     align-items: center;
     justify-content: space-between;}
 .ui-dialog.customer-details-dialog .customer-dialog-content .bottom-bar .customer-name{font-size:20px;color:#272727}
 .ui-dialog.customer-details-dialog .customer-dialog-content .bottom-bar .customer-name label{display:block;margin:0px;font-size:14px;}
-.ui-dialog.customer-details-dialog .customer-dialog-content .bottom-bar .btn-primary {
-   background: transparent linear-gradient(249deg, var(--orange) 0%, #E84F2B 100%) 0% 0% no-repeat ;
-    height: 34px;
-    width: auto;
+.ui-dialog  .btn-primary {
+  background: transparent linear-gradient(260deg, var(--orange) 0%, #E84F2B 100%) 0% 0% no-repeat;
+    height: 50px;
+    width: 100%;
     border: none;
     text-align: left;
     padding: 0px 10px 0px 10px;
@@ -188,12 +193,13 @@ display: none;
     font-size: 14px;
     font-family: 'Lato', sans-serif;
     border-radius: 4px;
-    line-height: 34px;
+    line-height: 50px;
     display: flex;
-    margin: 10px 0px;
+   /* margin: 10px 0px;*/
     position: relative;
     justify-content: center;
     align-items: center;
+	letter-spacing: 1.6px;  font-family: 'DINNextLTArabic-Bold';    text-transform: uppercase;
 }
 .ui-dialog.customer-details-dialog .customer-dialog-content .bottom-bar .btn-primary .icon {
     width: 15px;
@@ -201,6 +207,37 @@ display: none;
     background: url(images/down-arrow.svg) left top no-repeat;
     margin-right: 10px;
 }
+.ui-dialog .btn-primary.btn-maroon{background: #C11D2A}
+.ui-dialog.customer-details-dialog .form-group label {
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    letter-spacing: 1.2px;
+}
+.ui-dialog.customer-details-dialog  .form-group .form-control {
+    height: 50px;
+    background: #DBDBDB;
+    border: none;
+    line-height: 50px;
+    text-indent: 16px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #272727;
+    padding: 0px;
+   
+    border-radius: 0px;
+    padding-right: 0px;
+}
+.decline-dialog{}
+.ui-dialog.decline-dialog .ui-dialog-content .dialog-title{font-family: 'DINNextLTArabic-Bold';font-size:22px;color:#000;text-transform:uppercase}
+.ui-dialog.decline-dialog  .small-txt{font-family: 'Lato', sans-serif;font-size:16px;color:#000;text-align:center;    padding-top: 5px;}
+.ui-dialog.decline-dialog  .decline-dialog-content{padding:20px 30px;}
+.ui-dialog.decline-dialog  .decline-dialog-content textarea.form-control{border-radius:0px;background: #F7F7F7;height:182px;font-size:16px;color:#8496A5;font-family: 'Lato', sans-serif;border:none;}
+.ui-dialog.decline-dialog  .decline-dialog-content .bottom-bar{display:flex;text-align: center;
+    justify-content: center}
+	.ui-dialog.decline-dialog  .decline-dialog-content .bottom-bar .btn-primary{    width: 345px;}
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
 	

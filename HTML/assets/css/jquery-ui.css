@@ -513,10 +513,10 @@ button.ui-button::-moz-focus-inner {
 	position: absolute;
 	right: 16px;
     top: 10px;
-	width: 28px;
+	width: 26px;
 	margin: 0px 0 0 0;
 	padding: 1px;
-	height: 28px;
+	height: 26px;
 	background:url(images/dialog-close.svg) left top no-repeat;
 	border:none;    z-index: 1;    outline: none;top:20px;
 }

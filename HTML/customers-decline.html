@@ -162,11 +162,11 @@
 					<ul class="pagination">					
 						<li class="previous"><a href="#"></a></li>
 						<li class="active"><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-						<li><a href="#">6</a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">1</a></li>
 						<li class="next"><a href="#"></a></li>
 						
 						
@@ -186,6 +186,24 @@
 	
 	
 	</div>
+<div id="decline" title="">
+  <div class="dialog-title">
+ DECLINE
+</div>
+<div class="small-txt">Please share the reason to decline the verification ID!</div>
+  <div class="decline-dialog-content">
+		<div class="form-group">
+				
+				<textarea class="form-control" placeholder="Please type the reason here..." ></textarea>
+			</div>
+	<div class="bottom-bar">
+		
+		<button type="button" class="btn btn-primary btn-maroon">CONFIRM</button>
+	</div>
+	
+  </div>
+</div>	
+	
    <script src="assets/js/jquery-1.12.4.js"></script>
   <script src="assets/js/jquery-ui.js"></script>
 	<script src="assets/js/jquery.slimscroll.js" ></script>
@@ -195,6 +213,16 @@
 $(document).ready(function () {
    $( "#tabs" ).tabs();
 });
+</script> 
+<script>
+$(document).ready(function () {
+$("#decline").dialog({
+	dialogClass: "decline-dialog",
+	modal: true,
+	width:790}); 		
+	
+	}); 
+
 </script> 
   </body>
 </html>
